@@ -1,0 +1,41 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Roker PUBG</title><meta name="description" content="Jugá PUBG Mobile con Roker91: copiá mi ID y seguime en TikTok y Kick.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--rojo:#E5252A;--negro:#0E0F12;--panel:#17191E;--gris:#B9BDC7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{min-height:100dvh;background:var(--negro);color:#fff;font-family:Rajdhani,Arial,sans-serif;font-weight:700;display:flex;justify-content:center;
+ padding:max(24px,env(safe-area-inset-top)) 16px max(24px,env(safe-area-inset-bottom));
+ background-image:repeating-linear-gradient(115deg,transparent 0 60px,rgba(229,37,42,.07) 60px 63px)}
+main{width:100%;max-width:420px;display:flex;flex-direction:column;gap:14px}
+.k{color:var(--rojo);letter-spacing:.25em;font-size:14px}
+h1{font-family:'Bebas Neue',Impact,sans-serif;font-size:64px;line-height:.9;letter-spacing:.03em}
+.sub{color:var(--gris);font-size:18px;margin-bottom:8px}
+.card{background:var(--panel);border-left:5px solid var(--rojo);padding:18px}
+.lab{color:var(--gris);font-size:15px;letter-spacing:.12em}
+.id{font-family:'Bebas Neue',Impact,sans-serif;font-size:48px;letter-spacing:.05em}
+button,a.btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;width:100%;border:0;border-radius:4px;
+ font:700 20px Rajdhani,Arial,sans-serif;text-decoration:none;cursor:pointer}
+.prim{background:var(--rojo);color:#fff}.sec{background:#fff;color:var(--negro)}.ter{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.45)}
+button:focus-visible,a.btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.ok{color:#7CE38B;font-size:16px;min-height:20px}
+ol{padding-left:20px;color:var(--gris);font-size:17px;line-height:1.5}
+header{position:relative;min-height:230px}header .pj{position:absolute;right:-12px;top:-6px;height:250px;filter:drop-shadow(0 0 24px rgba(229,37,42,.5))}header>*:not(.pj){position:relative;z-index:1;max-width:70%}</style></head><body><main>
+<header><img class="pj" src="personaje.png" alt="Personaje de Roker91 en PUBG Mobile"><div class="k">PUBG MOBILE · ARGENTINA</div>
+<h1>Roker PUBG</h1>
+<p class="sub">Jugá conmigo en los vivos. 8 años en PUBG.</p></header>
+<section class="card"><div class="lab">MI ID DEL JUEGO · Roker91</div><div class="id" id="id">5100946290</div>
+<button class="prim" id="copiar" type="button">Copiar mi ID</button><div class="ok" id="ok" role="status" aria-live="polite"></div></section>
+<a class="btn sec" href="https://www.tiktok.com/@roker.pubg" rel="noopener">Seguime en TikTok</a>
+<a class="btn ter" href="https://kick.com/roket2891" rel="noopener">Mirame en Kick</a>
+<section class="card"><div class="lab">CÓMO SUMARTE</div><ol>
+<li>En el vivo escribí <b>cola</b> + tu nombre del juego.</li>
+<li>Mandame solicitud con mi ID.</li>
+<li>Acepto a los 3 primeros de la cola. Turnos de 2 partidas.</li></ol></section>
+</main><script>
+const ok=document.getElementById('ok'), id=document.getElementById('id').textContent.trim();
+document.getElementById('copiar').onclick=async()=>{
+ try{await navigator.clipboard.writeText(id)}catch(e){const t=document.createElement('textarea');t.value=id;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove()}
+ ok.textContent='ID copiado: '+id+'. Pegalo en PUBG > Amigos > Agregar.';};
+</script></body></html>
